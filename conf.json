@@ -1,0 +1,57 @@
+{
+	"ip": "127.0.0.1",
+	"port": "80",
+	"vhosts": {
+		"127.0.0.1": {
+			"DocumentRoot": "e:/static"
+		},
+		"www.iqiyi.com": {
+			"DocumentRoot": "d:/qilin", 
+			"goback": "true",  
+			"backIp": "202.108.14.55",
+			"PageSection": {
+				"reviewlist": "E:/static/dailybuild/css/section/qiyireview.htm",
+				"comment": "E:/static/dailybuild/css/section/playcmt.htm",
+				"recommend": "E:/static/dailybuild/css/section/qiyirecommend.htm"
+			}
+		},
+		"yule.iqiyi.com": {
+			"DocumentRoot": "d:/qilin", 
+			"goback": "true",  
+			"backIp": "202.108.14.16"
+		},
+		"static.iqiyi.com": {
+			"DocumentRoot": "e:/static", 
+			"notFundtoBack": "true", 
+			"backIp": "202.108.14.15"
+		},
+		"static.qiyi.com": {
+			"DocumentRoot": "e:/static", 
+			"notFundtoBack": "true", 
+			"backIp": "202.108.14.15"
+		},
+		"static.qiyipic.com": {
+			"DocumentRoot": "e:/static", 
+			"notFundtoBack": "true", 
+			"backIp": "202.108.14.15"
+		},
+		"t.qiyi.com": {
+			"DocumentRoot": "e:/qitan", 
+			"notFundtoBack": "true", 
+			"backIp": "123.125.117.66",
+			"PageSection": {
+				"editor": "E:/static/dailybuild/css/section/chateditor.htm"
+			}
+		},
+		"www.baidu.com": {
+			"DocumentRoot": "e:/qitan", 
+			"goback": "true", 
+			"backIp": "61.135.169.125"
+		},
+		"www.qiyipic.com": {
+			"DocumentRoot": "e:/static", 
+			"notFundtoBack": "true", 
+			"backIp": "123.125.117.15"
+		}
+	}
+}
