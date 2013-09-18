@@ -20,34 +20,34 @@ vhosts及静态文件服务器。
 
 ## 麒麟配置文件(conf.json)说明:
 
- {
- "ip": "127.0.0.1",
- "port": "80",
- "vhosts": {
-  "127.0.0.1": {
-   "DocumentRoot": "e:/static"          //本地静态文件目录
-  },
-  "www.iqiyi.com": {
-   "DocumentRoot": "d:/qilin", 
-   "goback": "true",                    //网站代理，设为true会直接请求外网资源。
-   "backIp": "202.108.14.55",           //www.iqiyi.com 的外网ip
-   "PageSection": {                     //页面碎片配置,用本地文件替换线上页面标识的碎片。 <!--section comment-->评论区碎片内容<!--end section-->
-    "comment": "E:/static/dailybuild/section/playcmt.htm",
-    "reviewlist": "E:/static/dailybuild/section/qiyireview.htm"
+   {
+      "ip": "127.0.0.1",
+      "port": "80",
+      "vhosts": {
+       "127.0.0.1": {
+        "DocumentRoot": "e:/static"          //本地静态文件目录
+       },
+       "www.iqiyi.com": {
+        "DocumentRoot": "d:/qilin", 
+        "goback": "true",                    //网站代理，设为true会直接请求外网资源。
+        "backIp": "202.108.14.55",           //www.iqiyi.com 的外网ip
+        "PageSection": {                     //页面碎片配置,用本地文件替换线上页面标识的碎片。 <!--section comment-->评论区碎片内容<!--end section-->
+         "comment": "E:/static/dailybuild/section/playcmt.htm",
+         "reviewlist": "E:/static/dailybuild/section/qiyireview.htm"
+        }
+       },
+       "yule.iqiyi.com": {
+        "DocumentRoot": "d:/qilin", 
+        "goback": "true",  
+        "backIp": "202.108.14.16"
+       },
+       "static.qiyi.com": {
+        "DocumentRoot": "e:/static", 
+        "notFundtoBack": "true",            //设为true，本地不存在的文件会从外网获取相关文件，从而实现一个完美的开发和测试环境。
+        "backIp": "202.108.14.15"
+       }
+      }
    }
-  },
-  "yule.iqiyi.com": {
-   "DocumentRoot": "d:/qilin", 
-   "goback": "true",  
-   "backIp": "202.108.14.16"
-  },
-  "static.qiyi.com": {
-   "DocumentRoot": "e:/static", 
-   "notFundtoBack": "true",            //设为true，本地不存在的文件会从外网获取相关文件，从而实现一个完美的开发和测试环境。
-   "backIp": "202.108.14.15"
-  }
- }
- }
 
 
 
