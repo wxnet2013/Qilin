@@ -3,53 +3,56 @@
 	"port": "80",
 	"vhosts": {
 		"127.0.0.1": {
-			"DocumentRoot": "e:/static"
+			"DocumentRoot": "d:/www"
+		},
+		"localhost": {
+			"DocumentRoot": "d:/www"
 		},
 		"www.iqiyi.com": {
-			"DocumentRoot": "d:/qilin", 
-			"goback": "true",  
+			"DocumentRoot": "d:/www/qiyi/static", 
+			"goback": "true", 
 			"backIp": "202.108.14.55",
 			"PageSection": {
-				"reviewlist": "E:/static/dailybuild/css/section/qiyireview.htm",
-				"comment": "E:/static/dailybuild/css/section/playcmt.htm",
-				"recommend": "E:/static/dailybuild/css/section/qiyirecommend.htm"
+				"reviewlist": "d:/www/qiyi/static/dailybuild/css/section/qiyireview.htm",
+				"comment": "d:/www/qiyi/static/dailybuild/css/section/playcmt.htm",
+				"recommend": "d:/www/qiyi/static/dailybuild/css/section/qiyirecommend.htm"
 			}
 		},
-		"yule.iqiyi.com": {
-			"DocumentRoot": "d:/qilin", 
-			"goback": "true",  
-			"backIp": "202.108.14.16"
-		},
 		"static.iqiyi.com": {
-			"DocumentRoot": "e:/static", 
+			"DocumentRoot": "d:/www/qiyi/static", 
 			"notFundtoBack": "true", 
 			"backIp": "202.108.14.15"
 		},
 		"static.qiyi.com": {
-			"DocumentRoot": "e:/static", 
+			"DocumentRoot": "d:/www/qiyi/static", 
 			"notFundtoBack": "true", 
 			"backIp": "202.108.14.15"
 		},
 		"static.qiyipic.com": {
-			"DocumentRoot": "e:/static", 
+			"DocumentRoot": "d:/www/qiyi/static", 
 			"notFundtoBack": "true", 
 			"backIp": "202.108.14.15"
 		},
+		"yule.iqiyi.com": {
+			"DocumentRoot": "d:/www/qiyi/qilin", 
+			"goback": "true",  
+			"backIp": "202.108.14.16"
+		},
 		"t.qiyi.com": {
-			"DocumentRoot": "e:/qitan", 
+			"DocumentRoot": "d:/www/qiyi/qitan", 
 			"notFundtoBack": "true", 
 			"backIp": "123.125.117.66",
 			"PageSection": {
-				"editor": "E:/static/dailybuild/css/section/chateditor.htm"
+				"editor": "d:/qiyi/static/dailybuild/css/section/chateditor.htm"
 			}
 		},
 		"www.baidu.com": {
-			"DocumentRoot": "e:/qitan", 
+			"DocumentRoot": "d:/www/qiyi/qitan", 
 			"goback": "true", 
 			"backIp": "61.135.169.125"
 		},
 		"www.qiyipic.com": {
-			"DocumentRoot": "e:/static", 
+			"DocumentRoot": "d:/www/qiyi/static", 
 			"notFundtoBack": "true", 
 			"backIp": "123.125.117.15"
 		}
